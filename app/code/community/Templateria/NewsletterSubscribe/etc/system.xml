@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <newslettersubscribe translate="label" module="newslettersubscribe">
+            <label>Templateria</label>
+            <sort_order>99999</sort_order>
+        </newslettersubscribe>
+    </tabs>
+    <sections>
+        <newslettersubscribe translate="label" module="newslettersubscribe">
+            <label>Newsletter Subscribe</label>
+            <tab>newslettersubscribe</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <account translate="label" module="newslettersubscribe">
+                    <label>Account Information</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <apikey translate="label">
+                            <label>API Key: </label>
+                            <comment>Your API Key.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </apikey>
+                        <accountid translate="label">
+                            <label>Account ID: </label>
+                            <comment>Your Account ID.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </accountid>
+                        <listid>
+                            <label>List ID: </label>
+                            <comment>List ID where new Contacts will be saved to.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                        </listid>
+                    </fields>
+                </account>
+            </groups>
+        </newslettersubscribe>
+    </sections>
+</config>

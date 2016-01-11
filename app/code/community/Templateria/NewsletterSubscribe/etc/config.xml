@@ -1,0 +1,44 @@
+<config>
+    <modules>
+        <Templateria_NewsletterSubscribe>
+            <version>0.1.0</version>
+        </Templateria_NewsletterSubscribe>
+    </modules>
+    <global>
+        <helpers>
+            <newslettersubscribe><class>Templateria_NewsletterSubscribe_Helper</class></newslettersubscribe>
+        </helpers>
+        <events>
+            <newsletter_subscriber_save_commit_after>
+                <observers>
+                    <templateria_newslettersubscribe_subscriptionobserver>
+                        <type>singleton</type>
+                        <class>Templateria_NewsletterSubscribe_Observers_SubscriptionObserver</class>
+                        <method>subscribe</method>
+                    </templateria_newslettersubscribe_subscriptionobserver>
+                </observers>
+            </newsletter_subscriber_save_commit_after>
+        </events>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <newslettersubscribe>
+                                            <title>Templateria Newsletter Subscribe Options</title>
+                                        </newslettersubscribe>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
