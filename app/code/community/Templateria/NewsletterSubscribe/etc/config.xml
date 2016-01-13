@@ -9,15 +9,14 @@
             <newslettersubscribe><class>Templateria_NewsletterSubscribe_Helper</class></newslettersubscribe>
         </helpers>
         <events>
-            <newsletter_subscriber_save_commit_after>
+            <newsletter_subscriber_save_after>
                 <observers>
                     <templateria_newslettersubscribe_subscriptionobserver>
-                        <type>singleton</type>
                         <class>Templateria_NewsletterSubscribe_Observers_SubscriptionObserver</class>
                         <method>subscribe</method>
                     </templateria_newslettersubscribe_subscriptionobserver>
                 </observers>
-            </newsletter_subscriber_save_commit_after>
+            </newsletter_subscriber_save_after>
         </events>
     </global>
     <adminhtml>
