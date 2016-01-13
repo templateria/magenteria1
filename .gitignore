@@ -2,3 +2,4 @@
 *.gz
 *.tgz
 build/var
+magento-tar-to-connect
