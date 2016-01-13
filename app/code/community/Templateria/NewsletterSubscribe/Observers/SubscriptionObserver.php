@@ -2,7 +2,7 @@
 
 class Templateria_NewsletterSubscribe_Observers_SubscriptionObserver
 {
-    public function subscribe($observer)
+    public function subscribe(Varien_Event_Observer $observer)
     {
         $data      = $observer->getEvent()->getDataObject()->getData();
         $apikey    = Mage::getStoreConfig('newslettersubscribe/account/apikey');
